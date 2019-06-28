@@ -28,7 +28,7 @@ function driversByName(driverArr) {
 
 function totalRevenue(driverArr) {
   return driverArr.reduce(function(sum, d) {
-    return d.revenue
+    return sum += d.revenue;
   }, 0);
 };
 // totalRevenue() — Receives an array of driver objects and returns the sum of the revenue earned by each driver.
